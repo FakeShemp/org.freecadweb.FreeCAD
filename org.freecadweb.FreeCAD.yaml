@@ -653,6 +653,9 @@ modules:
         commit: 6530e364184ce05ccff39501e175cf2237e6ee4b
       - type: file
         path: openscad.sh
+      # For wayland support
+      - type: patch
+        path: patches/coin.patch
       # we need this patch so that FreeCAD can find QAssistant
       - type: patch
         path: patches/freecad-assistant-path.patch
